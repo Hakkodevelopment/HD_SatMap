@@ -1,5 +1,6 @@
 config = {
 	versionCheck = true, -- enables version checking (if this is enabled and there is no new version it won't display a message anyways)
+	displayPostal = false, -- Enables or Disables displaying the postal on screen
 	text = {
 		format = '~y~Nearest Postal~w~: %s (~g~%.2fm~w~)',
 		-- ScriptHook PLD Position
