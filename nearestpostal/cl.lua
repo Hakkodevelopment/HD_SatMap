@@ -42,7 +42,8 @@ Citizen.CreateThread(
 	end
 )
 -- text display thread
-Citizen.CreateThread(
+if config.displayPostal then
+	Citizen.CreateThread(
 	function()
 		while true do
 			if nearest and not IsHudHidden() then
@@ -58,6 +59,7 @@ Citizen.CreateThread(
 		end
 	end
 )
+end
 
 RegisterCommand(
 	'postal',
